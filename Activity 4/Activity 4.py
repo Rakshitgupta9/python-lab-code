@@ -1,27 +1,36 @@
-# linear search
-list = [12,89,24,56,45,25,36,69,41]
-value = 25
-for i in range(len(list)):
-    if list[i] == value:
-        print("Linear Search: ",value," found at index ",i)
-        break
-else:
-    print("Linear Search: ",value," not found in the list")
-
-
-
-#binary search 
-list1 = [12,18,23,35,65,78,88,99,100]
-value1 = 23
-left, right = 0, len(list1) - 1
-while left <= right:
-    mid = left + (right - left) // 2
-    if list1[mid] == value1:
-        print("Binary Search: ",value1," found at index ",mid)
-        break
-    elif list1[mid] < value1:
-        left = mid + 1
+#Linear Search
+def linear_search(list,search):
+    for i in range(len(list)):
+        if list[i]==search:
+            print("Element is found at index ",i)
+            break
     else:
-        right = mid - 1
-else:
-    print("Binary Search: ",value1," not found in the list")
+        print("Element not found")
+
+#Binary Search
+def binary_searh(list,search):
+    left=0
+    rigth=len(list)-1
+    while left<=rigth:
+        mid=left+(rigth-left)//2
+        if list[mid]== search:
+            print("Element found at the index -",mid)
+            break
+        elif list[mid]<search:
+            left=mid+1
+        else:
+            rigth=mid-1
+    else:
+        print('Element not found')
+
+#Linear Search
+list=[24,26,95,45,69,88,12]
+print("Given List is - ",list)
+number=int(input("Enter the number to find in the list : "))
+linear_search(list,number)
+
+#Binary Search
+list1=[12,24,35,42,50,69,88]
+print("Given List is - ",list1)
+number1=int(input("Enter the number to find in the list : "))
+binary_searh(list1,number1)
