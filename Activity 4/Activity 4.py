@@ -10,16 +10,16 @@ def linear_search(list,search):
 #Binary Search
 def binary_searh(list,search):
     left=0
-    rigth=len(list)-1
-    while left<=rigth:
-        mid=left+(rigth-left)//2
+    right=len(list)-1
+    while left<=right:
+        mid=left+(right-left)//2
         if list[mid]== search:
             print("Element found at the index -",mid)
             break
         elif list[mid]<search:
             left=mid+1
         else:
-            rigth=mid-1
+            right=mid-1
     else:
         print('Element not found')
 
