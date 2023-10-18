@@ -230,22 +230,22 @@ print(chr(a))
 def circle():
     r=int(input("Enter radius of Circle :"))
     area=3.14*r*r
-    perameter=2*3.14*r
+    Parameter=2*3.14*r
     print("Area of circle with radius,",r,":",area,"\n")
-    print("Perameter of circle with radius,",r,":",perameter,"\n")
+    print("Parameter of circle with radius,",r,":",Parameter,"\n")
 def square():
     side=int(input("Enter length of Side for Square :"))
     area=side**2
     perimeter=4*side
     print("Area of Square with side,",side,":",area,"\n")
-    print("Perameter of Square with side,",side,":",perimeter,"\n")
+    print("Parameter of Square with side,",side,":",perimeter,"\n")
 def rectangle():
     l=int(input("Enter Length of Rectangle :"))
     b=int(input("Enter Breadth of Rectangle :"))
     area=l*b
     perimeter=(2*(l+b))
     print("Area of Rectangle with length,",l,"and breadth,",b,":",area,"\n")
-    print("Perameter of Rectangle with length,",l,"and breadth,",b,":",perimeter,"\n")
+    print("Parameter of Rectangle with length,",l,"and breadth,",b,":",perimeter,"\n")
 while True:
     print("1. Circle")
     print("2. Square")
