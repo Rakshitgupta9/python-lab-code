@@ -317,3 +317,72 @@ print("Number of Vowels in",str,"=",flag)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+14.
+Rupal has a huge collection of country stamps. She decided to count the total number of distinct country stamps in her collection. She asked for your help. You pick the stamps one by one from a stack of country stamps.
+Find the total number of distinct country stamps?
+
+Input Format :
+The first line contains an integer N, the total numbe of country stamps.
+The next N lines contains the name of the country where the stamp is from.
+
+Output Format!
+Output the total number of distinct country stamps on a single line
+"""
+n=int(input("Enter The Total number of country stamps : "))
+country_stamp=set()
+for i in range(0,n):
+    country_name=input("Enter the "+ str(i+1) +" country stamp Name : ")
+    country_stamp.add(country_name.upper())
+print("Total Number Of Distinct Country Stamps : ",len(country_stamp))
+
+
+
+
+
+
+
+
+
+#15. Given a list, the task is to write a Python Program to find the Index containing String?
+list=['Rakshit',75,50,'Gupta','Py',69,88,'Miet']
+for i,item in enumerate(list):
+    if isinstance(item, str):
+        print(i,end=" ")
+    
+
+
+
+
+
+
+
+"""
+16. wap to print the following pattern
+    * * *
+    * * *
+    * * *
+    * * *
+"""
+for i in range(0,4):
+    print("* * *")
+
+r=4
+c=3
+for i in range(r):
+    for j in range(c):
+        print("*", end=" ")
+    print()
