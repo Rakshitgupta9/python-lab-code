@@ -1,4 +1,4 @@
-# WAP for performing type conversions
+# 1. WAP for performing type conversions
 # Integer to float
 integer_num = 42
 float_num = float(integer_num)
@@ -39,7 +39,7 @@ print("Boolean to string:", boolean_val, "->", "'", string_bool, "'")
 
 
 
-# WAP to swap two numbers without using temp variable
+#2. WAP to swap two numbers without using temp variable
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 print("Before swapping: First number = ",num1,"Second number = ",num2)
@@ -54,7 +54,7 @@ print("After swapping: First number = ",num1,"Second number = ",num2)
 
 
 
-# WAP to build a mini calculator
+#3. WAP to build a mini calculator
 while True:
     print("Menu:")
     print("1. Addition")
@@ -98,7 +98,7 @@ while True:
 
 
 
-# String Slicing and string operations
+#4. String Slicing and string operations
 str = "Hello, World!"
 substring = str[7:12]
 print(substring)
@@ -116,7 +116,7 @@ print("Lowercase:", str.lower())
 
 
 
-# WAP to perform following operation a string:   1. find the length     2. lowercase the string    3. uppercase the string    
+#5. WAP to perform following operation a string:   1. find the length     2. lowercase the string    3. uppercase the string    
 # 4. slicing method    5. find the index of character from the string      6. count a character’s occurrence
 str = "I'm from Miet"
 length = len(str)
@@ -139,7 +139,7 @@ print("6. Occurrence of 'm' in the string:", char_count)
 
 
 
-# WAP to swap two numbers by using bitwise without 3rd operator
+#6. WAP to swap two numbers by using bitwise without 3rd operator
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 print("Original numbers: num1 =", num1, "num2 =", num2)
@@ -153,7 +153,7 @@ print("Swapped numbers: num1 =", num1, "num2 =", num2)
 
 
 
-# Perform Following operations on matrix    i. Iterate each element     ii. Add each element    iii. Add even numbers in the matrix   iv. Add numbers on even indexes
+#7. Perform Following operations on matrix    i. Iterate each element     ii. Add each element    iii. Add even numbers in the matrix   iv. Add numbers on even indexes
 matrix = [
     [1, 2, 3],
     [4, 5, 6],
@@ -191,7 +191,7 @@ print("Sum of numbers on even indexes:", a)
 
 
 
-# WAP toggle the Kth bit by using bitwise operator
+#8. WAP toggle the Kth bit by using bitwise operator
 num = int(input("Enter a number: "))
 k = int(input("Enter the position (K) of the bit to toggle: "))
 print("Original number:", num)
@@ -204,7 +204,7 @@ print("The", k, "th bit has been toggled. Result:", result)
 
 
 
-# WAP to unset the rightmost set bit by bit manipulation
+#9. WAP to unset the rightmost set bit by bit manipulation
 a=int(input("Enter the number : "))
 a=a&(a-1)
 print("The number after unsetting the rightmost set bit", a)
@@ -214,7 +214,7 @@ print("The number after unsetting the rightmost set bit", a)
 
 
 
-# WAP to convert lowercase character to uppercase using bit opertaor
+#10. WAP to convert lowercase character to uppercase using bit opertaor
 char = input('Enter a lower case letter: ')
 a=ord(char)
 a=a&(~(1<<5))
@@ -226,7 +226,7 @@ print(chr(a))
 
 
 
-# Write a program to find area parameter of circle square and rectangle by user choice
+#11. Write a program to find area parameter of circle square and rectangle by user choice
 def circle():
     r=int(input("Enter radius of Circle :"))
     area=3.14*r*r
