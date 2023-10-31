@@ -262,3 +262,58 @@ while True:
         break
     else:
         print("Invalid Choice")
+    
+
+
+
+
+
+
+
+
+#12. WAP to find whether a string contains vowels or not
+#for loop
+str = input("Enter the string: ")
+flag = 0
+for i in str:
+    if i in "aeiouAEIOU":
+        flag = 1
+        break 
+if flag == 1:
+    print("It contains a vowel")
+else:
+    print("It doesn't contain any vowel")
+
+#while loop
+str = input("Enter the string: ")
+flag = 0
+index = 0
+while index < len(str):
+    if str[index] in "aeiouAEIOU":
+        flag = 1
+        break  
+    index += 1
+if flag == 1:
+    print("It contains a vowel")
+else:
+    print("It doesn't contain any vowel")
+
+
+
+
+
+
+
+
+#13 WAP to count the number of vowels
+str = input("Enter the string: ")
+flag = 0
+index = 0
+while index < len(str):
+    if str[index] in "aeiouAEIOU":
+        flag += 1
+    index += 1
+print("Number of Vowels in",str,"=",flag)
+
+
+
