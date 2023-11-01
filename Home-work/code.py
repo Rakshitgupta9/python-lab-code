@@ -386,3 +386,47 @@ for i in range(r):
     for j in range(c):
         print("*", end=" ")
     print()
+
+
+
+
+
+
+
+#17. find runner up score in a list
+n = int(input("Enter the number of participants: "))
+scores = list(map(int, input("Enter the scores separated by space: ").split(",")))
+unique_scores = list(set(scores))
+unique_scores.sort(reverse=True)
+runner_up_score = unique_scores[1]
+print("Runner-up score:", runner_up_score)
+
+
+
+
+
+
+
+#18. merge two dictonaries
+dict1={"a":85,"b":89}
+dict2={"b":69,"c":78}
+dict={**dict1,**dict2}
+print(dict)
+
+
+
+
+
+
+
+#19. find longest word in the list
+list=[]
+n=int(input("Enter Number of elements for list : "))
+for i in range(n):
+    element = input("Enter Elements : ")
+    list.append(element)   
+longest=""
+for j in list:
+    if(len(j)>len(longest)):
+        longest=j
+print("The longest string is ",longest," and it's length is ",len(longest))
