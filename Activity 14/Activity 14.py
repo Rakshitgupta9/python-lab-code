@@ -1,0 +1,6 @@
+f1=open("MyFile.txt","w")
+l1=input("Enter Line 1 : ")
+l2=input("Enter Line 2 : ")
+l3=input("Enter Line 3 : ")
+f1.write(f"{l1}\n{l2}\n{l3}")
+f1.close()

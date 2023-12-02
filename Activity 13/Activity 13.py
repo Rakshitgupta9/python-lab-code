@@ -1,0 +1,5 @@
+f1=open("test.txt","r")
+a=f1.read()
+a=sorted(set(a))
+print(a)
+f1.close()
