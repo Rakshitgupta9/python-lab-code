@@ -19,7 +19,7 @@ def text_to_morse():
     text=input("Enter The text : ")
     text=text.upper()
     for char in text:
-        if char != " ":
+        if char in MORSE_CODE_DICT:
            morse+=MORSE_CODE_DICT[char]+" " 
         else:
             morse+=" "
