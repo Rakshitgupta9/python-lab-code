@@ -1,9 +1,9 @@
-
 #1
 print("Hello, World!")
 
 	
-	
+
+
 	
 #2	
 n = int(input().strip())
@@ -42,12 +42,18 @@ print(a/b)
 
 
 
+
+
+
 #5
 n = int(input())
 for i in range(n):
     print(i**2)
 	
-	
+
+
+
+
 	
 	
 #6
@@ -55,11 +61,12 @@ def is_leap(year):
     leap = False
     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
         leap=True
-
     return leap
-
 year = int(input())
 print(is_leap(year))
+
+
+
 
 
 
@@ -69,6 +76,9 @@ print(is_leap(year))
 n = int(input())
 for i in range(1,n+1):
     print(i,end="")
+
+
+
 
 
 
@@ -91,12 +101,20 @@ print(cord)
 
 
 
+
+
 #9
 n = int(input())
 arr = map(int, input().split())
 arr=sorted(arr, reverse=True)
 unique=list(set(arr))
 print(unique[1])
+
+
+
+
+
+
 
 
 
@@ -125,13 +143,24 @@ for i in range(n):
         list.reverse()
 		
 		
-		
+
+
+
+
+
+
+
 #11
 n = int(input())
 integer_list = map(int, input().split())
 
 tup=tuple(integer_list)
 print(hash(tup))
+
+
+
+
+
 
 
 
@@ -148,7 +177,13 @@ print(result)
     
 	
 	
-	
+
+
+
+
+
+
+
 #13
 py=[]
 for i in range(int(input())):
@@ -167,7 +202,12 @@ name.sort()
 for i in name:
     print(i)
 	
-	
+
+
+
+
+
+
 	
 	
 	
@@ -194,6 +234,8 @@ print("%.2f" %avg)
 
 
 
+
+
 #15
 n = int(input())
 l = []
@@ -212,18 +254,25 @@ for i in range(n):
 for i in l:
     print(i)
 	
-	
+
+
+
+
+
+
+
 
 #16
 def print_full_name(first, last):
     print(f"Hello {first} {last}! You just delved into python.")
-
-
 first_name = input()
 last_name = input()
 print_full_name(first_name, last_name)
 	
-	
+
+
+
+
 
 
 
@@ -241,6 +290,9 @@ print(s_new)
 
 
 
+
+
+
 #18
 def count_substring(string, sub_string):
     oc=0
@@ -248,12 +300,12 @@ def count_substring(string, sub_string):
         if string[i:i+len(sub_string)] == sub_string:
             oc += 1
     return oc
-
 string = input().strip()
 sub_string = input().strip()
-    
 count = count_substring(string, sub_string)
 print(count)
+
+
 
 
 
@@ -267,6 +319,8 @@ print(any(str.isalpha() for str in s))
 print(any(str.isdigit() for str in s))
 print(any(str.islower() for str in s))
 print(any(str.isupper() for str in s))
+
+
 
 
 
@@ -288,10 +342,13 @@ print(result)
 
 
 
+
+
+
+
 #21
 def print_formatted(number):
     width = len(bin(number)[2:])
-    
     for i in range(1, number + 1):
         decimal = str(i)
         octal = oct(i)[2:]
@@ -300,6 +357,8 @@ def print_formatted(number):
         print(f"{decimal:>{width}} {octal:>{width}} {hexadecimal:>{width}} {binary:>{width}}")
 n = int(input())
 print_formatted(n)
+
+
 
 
 
@@ -323,9 +382,12 @@ print(result)
 
 
 
+
+
 #23
 i=input()
 eval(i)
+
 
 
 
